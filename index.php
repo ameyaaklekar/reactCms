@@ -6,6 +6,6 @@
 <body>
 <main id="main-app">
 </main>
-<script src="/assets/js/bundle.js"></script>
+<script src="/dist/bundle.js"></script>
 </body>
 </html> 
