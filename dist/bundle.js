@@ -9767,15 +9767,15 @@ var _reactDom = __webpack_require__(98);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _Main = __webpack_require__(184);
+var _main = __webpack_require__(184);
 
-var _Main2 = _interopRequireDefault(_Main);
+var _main2 = _interopRequireDefault(_main);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 __webpack_require__(185);
 
-_reactDom2.default.render(_react2.default.createElement(_Main2.default, null), document.getElementById('main-app'));
+_reactDom2.default.render(_react2.default.createElement(_main2.default, null), document.getElementById('main-app'));
 
 /***/ }),
 /* 83 */
