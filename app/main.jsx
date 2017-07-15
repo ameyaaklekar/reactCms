@@ -19,7 +19,7 @@ class Main extends Component {
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-md-12">
-							<h1>Dashboard</h1>
+							<h1>Dashboard</h1> 	
 						</div>
 					</div>
 				</div>
