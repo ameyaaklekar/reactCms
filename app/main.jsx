@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import{
+	BrowserRouter as Router,
+	Route,
+	Link
+} from 'react-router-dom';
 
 
 // Modules Import 
@@ -6,26 +11,26 @@ import React, { Component } from 'react';
 import Navigation from './modules/navigation/navigation.jsx';
 import Header from './modules/header/header.jsx';
 
+// Pages Import
+
+import Dashboard from './pages/dashboard/dashboard.jsx';
+import Blog from './pages/blog/blog.jsx';
+
 class Main extends Component {
 
   render() {
     return (
-		<div className="main">
-			<Header />
+    	<Router>
+			<div className="main">
+				<Header />
 
-			<Navigation />
+				<Navigation />
+				
+				<Route exact path='/' component={Dashboard} />
+				<Route exact path='/blog' component={Blog} />
 
-			<section className="content-section">
-				<div className="container-fluid">
-					<div className="row">
-						<div className="col-md-12">
-							<h1>Dashboard</h1> 	
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</div>
+			</div>
+		</Router>
     );
   }
 }

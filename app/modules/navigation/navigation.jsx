@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 
+import{
+	Link
+} from 'react-router-dom';
+
+import MenuItem from './menuItem.jsx';
+
 class Navigation extends Component {
 
   render() {
@@ -8,21 +14,23 @@ class Navigation extends Component {
 			<div className="aside__logo">
 				ReactCMS
 			</div>
+
 			<nav className="aside__nav">
 				<div className="aside__nav__category">
 					<h5 className="aside__nav__category__heading">Navigation</h5>
 			  		<ul>
-			  			<li><a><i className="fa fa-tachometer"></i>Dashboard</a></li>
-			  			<li><a><i className="fa fa-comments"></i>Blog</a></li>
+			  			<MenuItem url="/" name="Dashboard" icon="fa fa-dashboard" />
+			  			<MenuItem url="/blog" name="Blog" icon="fa fa-comments" />
 			  		</ul>
 				</div>
 			</nav>
+
 			<nav className="aside__nav">
 				<div className="aside__nav__category">
-					<h5 className="aside__nav__category__heading">CMS Settings</h5>
+					<h5 className="aside__nav__category__heading">Settings</h5>
 			  		<ul>
-			  			<li><a><i className="fa fa-gears"></i>Settings</a></li>
-			  			<li><a><i className="fa fa-users"></i>Users</a></li>
+			  			<MenuItem url="/settings" name="Settings" icon="fa fa-gears" />
+			  			<MenuItem url="/users" name="Users" icon="fa fa-users" />
 			  		</ul>
 				</div>
 			</nav>
